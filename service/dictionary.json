@@ -1,0 +1,254 @@
+{
+	"A": [
+		["False","False","True","False","False"],
+		["False","True","False","True","False"],
+		["False","True","True","True","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"]
+	],
+	"B": [
+		["False","True","True","False","False"],
+		["False","True","False","True","False"],
+		["False","True","True","False","False"],
+		["False","True","False","True","False"],
+		["False","True","True","False","False"]
+	],
+	"C": [
+		["False","False","True","True","False"],
+		["False","True","False","False","False"],
+		["False","True","False","False","False"],
+		["False","True","False","False","False"],
+		["False","False","True","True","False"]
+	],
+	"D": [
+		["False","True","True","False","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","True","True","False","False"]
+	],
+	"E": [
+		["False","True","True","True","False"],
+		["False","True","False","False","False"],
+		["False","True","True","False","False"],
+		["False","True","False","False","False"],
+		["False","True","True","True","False"]
+	],
+	"F": [
+		["False","True","True","True","False"],
+		["False","True","False","False","False"],
+		["False","True","True","False","False"],
+		["False","True","False","False","False"],
+		["False","True","False","False","False"]
+	],
+	"G": [
+		["False","False","True","True","True"],
+		["False","True","False","False","False"],
+		["False","True","False","True","True"],
+		["False","True","False","False","True"],
+		["False","False","True","True","False"]
+	],
+	"H": [
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","True","True","True","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"]
+	],
+	"I": [
+		["False","True","True","True","False"],
+		["False","False","True","False","False"],
+		["False","False","True","False","False"],
+		["False","False","True","False","False"],
+		["False","True","True","True","False"]
+	],
+	"J": [
+		["False","False","False","True","False"],
+		["False","False","False","True","False"],
+		["False","False","False","True","False"],
+		["False","True","False","True","False"],
+		["False","False","True","False","False"]
+	],
+	"K": [
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","True","True","False","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"]
+	],
+	"L": [
+		["False","True","False","False","False"],
+		["False","True","False","False","False"],
+		["False","True","False","False","False"],
+		["False","True","False","False","False"],
+		["False","True","True","True","False"]
+	],
+	"M": [
+		["False","True","False","True","False"],
+		["True","False","True","False","True"],
+		["True","False","True","False","True"],
+		["True","False","False","False","True"],
+		["True","False","False","False","True"]
+	],
+	"N": [
+		["False","True","False","False","True"],
+		["False","True","True","False","True"],
+		["False","True","True","True","True"],
+		["False","True","False","True","True"],
+		["False","True","False","False","True"]
+	],
+	"O": [
+		["False","False","True","True","False"],
+		["False","True","False","False","True"],
+		["False","True","False","False","True"],
+		["False","True","False","False","True"],
+		["False","False","True","True","False"]
+	],
+	"P": [
+		["False","True","True","False","False"],
+		["False","True","False","True","False"],
+		["False","True","True","False","False"],
+		["False","True","False","False","False"],
+		["False","True","False","False","False"]
+	],
+	"Q":[
+		["False","False","True","True","False"],
+		["False","True","False","False","True"],
+		["False","True","False","False","True"],
+		["False","True","False","True","True"],
+		["False","False","True","True","False"]
+	],
+	"R": [
+		["False","True","True","False","False"],
+		["False","True","False","True","False"],
+		["False","True","True","False","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"]
+	],
+	"S": [
+		["False","False","True","True","False"],
+		["False","True","False","False","False"],
+		["False","False","True","False","False"],
+		["False","False","False","True","False"],
+		["False","True","True","False","False"]
+	],
+	"T": [
+		["False","True","True","True","False"],
+		["False","False","True","False","False"],
+		["False","False","True","False","False"],
+		["False","False","True","False","False"],
+		["False","False","True","False","False"]
+	],
+	"U": [
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","True","True","True","False"]
+	],
+	"V": [
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","False","True","False","False"]
+	],
+	"W": [
+		["True","False","False","False","True"],
+		["True","False","False","False","True"],
+		["True","False","True","False","True"],
+		["True","False","True","False","True"],
+		["False","True","False","True","False"]
+	],
+	"X": [
+		["True","False","False","False","True"],
+		["False","True","False","True","False"],
+		["False","False","True","False","False"],
+		["False","True","False","True","False"],
+		["True","False","False","False","True"]
+	],
+	"Y": [
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","False","True","False","False"],
+		["False","False","True","False","False"],
+		["False","False","True","False","False"]
+	],
+	"Z": [
+		["False","True","True","True","True"],
+		["False","False","False","False","True"],
+		["False","False","False","True","False"],
+		["False","False","True","False","False"],
+		["False","True","True","True","True"]
+	],
+	"0": [
+		["False","False","True","False","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","True","False","True","False"],
+		["False","False","True","False","False"]
+	],
+	"1": [
+		["False","True","True","False","False"],
+		["False","False","True","False","False"],
+		["False","False","True","False","False"],
+		["False","False","True","False","False"],
+		["False","True","True","True","False"]
+	],
+	"2": [
+		["False","False","True","True","False"],
+		["False","True","False","False","True"],
+		["False","False","False","True","False"],
+		["False","False","True","False","False"],
+		["False","True","True","True","True"]
+	],
+	"3": [
+		["False","True","True","False","False"],
+		["False","False","False","True","False"],
+		["False","True","True","False","False"],
+		["False","False","False","True","False"],
+		["False","True","True","False","False"]
+	],
+	"4": [
+		["False","False","True","True","False"],
+		["False","True","False","True","False"],
+		["False","True","True","True","True"],
+		["False","False","False","True","False"],
+		["False","False","False","True","False"]
+	],
+	"5": [
+		["False","True","True","True","False"],
+		["False","True","False","False","False"],
+		["False","True","True","False","False"],
+		["False","False","False","True","False"],
+		["False","True","True","False","False"]
+	],
+	"6": [
+		["False","True","True","True","False"],
+		["False","True","False","False","False"],
+		["False","True","True","True","False"],
+		["False","True","False","True","False"],
+		["False","True","True","True","False"]
+	],
+	"7": [
+		["False","True","True","True","True"],
+		["False","False","False","False","True"],
+		["False","False","False","True","False"],
+		["False","False","True","False","False"],
+		["False","True","False","False","False"]
+	],
+	"8": [
+		["False","False","True","False","False"],
+		["False","True","False","True","False"],
+		["False","False","True","False","False"],
+		["False","True","False","True","False"],
+		["False","False","True","False","False"]
+	],
+	"9": [
+		["False","True","True","True","False"],
+		["False","True","False","True","False"],
+		["False","True","True","True","False"],
+		["False","False","False","True","False"],
+		["False","True","True","False","False"]
+	]
+}
