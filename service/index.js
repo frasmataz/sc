@@ -1,19 +1,28 @@
 var formatOutput = function(input, dictionary, sym1, sym2) {
-  var output = "";
-  for (var i = 0; i < 5; i++) {
-    for (var l = 0; l < input.length; l++) {
-      for (var j = 1; j < 5; j++) {
+  var output = [];
+
+  for (var l = 0; l < input.length; l++) {
+    for (var i = 0; i < dictionary[input.charAt(l)].length; i++) {
+      if (typeof output[i] == 'undefined')
+        output[i] = "";
+
+      for (var j = 0; j < dictionary[input.charAt(l)][1].length; j++) {
         if (dictionary[input.charAt(l)][i][j] == 'True') {
-          output += sym1;
+          output[i] += sym1;
         } else {
-          output += sym2;
+          output[i] += sym2;
         }
       }
     }
-    output += '\n';
   }
 
-  return output;
+  var outputStr = "";
+  for (var i in output) {
+    outputStr += output[i];
+    outputStr += '\n';
+  }
+
+  return outputStr;
 };
 
 var readDictionary = function() {
