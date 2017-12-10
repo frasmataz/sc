@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title>:sc:</title>
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		<style>
+
+			#header {
+				color: #F5F1ED;
+				font-family: 'Inconsolata', monospace;
+				font-size: 70px;
+				text-align: center;
+				margin-top: -100px;
+			}
+
+			#pagecontainer {
+				width: 800px;
+				height: 400px;
+
+				position: absolute;
+				top:0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+
+				margin: auto;
+			}
+
+			#input {
+				float: left;
+				width: 46%;
+				padding: 2%;
+			}
+
+			#output {
+				float: right;
+				width: 46%;
+				padding: 2%;
+			}
+
+			#go {
+				font-family: 'Inconsolata', monospace;
+				font-size: 16px;
+				color: #F5F1ED;
+				background-color: #606465;
+				border: 0px;
+				float: left;
+				margin-right: 70px;
+			}
+
+			body {
+				background-color: #34353A;
+
+				font-family: 'Inconsolata', monospace;
+				font-size: 16px;
+				color: #F5F1ED;
+			}
+
+			textarea {
+				width: 100%;
+				height: 100%;
+				background-color: #606465;
+				border: 0px;
+				resize: none;
+				margin-bottom: 10px;
+				font-family: 'Inconsolata', monospace;
+				font-size: 16px;
+				color: #F5F1ED;
+			}
+
+			input {
+				width: 100px;
+				background-color: #606465;
+				border: 0px;
+				resize: none;
+				font-family: 'Inconsolata', monospace;
+				font-size: 16px;
+				color: #F5F1ED;
+			}
+
+			textarea::-webkit-input-placeholder {
+				color: #F5F1ED;
+			}
+
+			textarea:-moz-placeholder { /* Firefox 18- */
+				color: #F5F1ED;
+			}
+
+			textarea::-moz-placeholder {  /* Firefox 19+ */
+				color: #F5F1ED;
+			}
+
+			textarea:-ms-input-placeholder {
+				color: #F5F1ED;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='pagecontainer'>
+			<div id='header'>
+				:sc:
+			</div>
+			<div id='controlswrapper'>
+				<div id='textboxes'>
+					<div id='input'>
+						<textarea placeholder="Input.."></textarea>
+						symbol 1: <input id='sym1' type='text'>    symbol 2: <input id='sym1' type='text'>
+					</div>
+					<div id='output'>
+						<textarea placeholder="Output.."></textarea>
+						<button id='go'>asciify</button>
+					</div>
+				</div>
+				<div id='controlsbelow'>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
