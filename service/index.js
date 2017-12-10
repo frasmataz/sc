@@ -7,7 +7,7 @@ var formatOutput = function(input, dictionary, sym1, sym2) {
         output[i] = "";
 
       for (var j = 0; j < dictionary[input.charAt(l)][1].length; j++) {
-        if (dictionary[input.charAt(l)][i][j] == 'True') {
+        if (dictionary[input.charAt(l)][i][j] == 1) {
           output[i] += sym1;
         } else {
           output[i] += sym2;
