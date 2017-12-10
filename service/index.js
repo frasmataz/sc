@@ -14,6 +14,14 @@ var formatOutput = function(input, dictionary, sym1, sym2) {
         }
       }
     }
+
+
+    // Hack to remove blank space at the end of output
+    if (l == input.length - 1) {
+      for (var i = 0; i < output.length; i++) {
+        output[i] = output[i].slice(0, sym2.length * -1)
+      }
+    }
   }
 
   var outputStr = "";
