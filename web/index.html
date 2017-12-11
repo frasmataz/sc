@@ -93,6 +93,30 @@
 				color: #F5F1ED;
 			}
 		</style>
+
+		<script type="text/javascript">
+			function go() {
+				var input = document.getElementById('inputtext').value;
+				var sym1 = document.getElementById('sym1').value;
+				var sym2 = document.getElementById('sym2').value;
+
+				var url = 'http://sc.frasersharp.com/api?';
+				url += 'sym1=' + sym1 + '&';
+				url += 'sym2=' + sym2 + '&';
+				url += 'message' + input;
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', url, true);
+				xhr.send();
+				xhr.onreadystatechange = processRequest;
+
+				function processRequest(e) {
+					if (xhr.readyState == 4) {
+						document.getElementById('outputtext').value = xhr.reposonseText;
+					}
+				}
+				alert(input);
+			}
+		</script>
 	</head>
 	<body>
 		<div id='pagecontainer'>
@@ -102,12 +126,12 @@
 			<div id='controlswrapper'>
 				<div id='textboxes'>
 					<div id='input'>
-						<textarea placeholder="Input.."></textarea>
-						symbol 1: <input id='sym1' type='text'>    symbol 2: <input id='sym1' type='text'>
+						<textarea id='inputtext' placeholder="Input.."></textarea>
+						symbol 1: <input id='sym1' type='text'>    symbol 2: <input id='sym2' type='text'>
 					</div>
 					<div id='output'>
-						<textarea placeholder="Output.."></textarea>
-						<button id='go'>asciify</button>
+						<textarea id='outputtext' placeholder="Output.."></textarea>
+						<button id='go' onclick='go();'>asciify</button>
 					</div>
 				</div>
 				<div id='controlsbelow'>
