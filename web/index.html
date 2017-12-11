@@ -13,7 +13,7 @@
 			}
 
 			#pagecontainer {
-				width: 800px;
+				width: 1000px;
 				height: 400px;
 
 				position: absolute;
@@ -63,7 +63,7 @@
 				resize: none;
 				margin-bottom: 10px;
 				font-family: 'Inconsolata', monospace;
-				font-size: 16px;
+				font-size: 14px;
 				color: #F5F1ED;
 			}
 
@@ -111,10 +111,10 @@
 
 				function processRequest(e) {
 					if (xhr.readyState == 4) {
-						document.getElementById('outputtext').value = xhr.reposonseText;
+						console.log(xhr.responseText);
+						document.getElementById('outputtext').innerText = xhr.responseText;
 					}
 				}
-				alert(input);
 			}
 		</script>
 	</head>
@@ -126,8 +126,8 @@
 			<div id='controlswrapper'>
 				<div id='textboxes'>
 					<div id='input'>
-						<textarea id='inputtext' placeholder="Input.."></textarea>
-						symbol 1: <input id='sym1' type='text'>    symbol 2: <input id='sym2' type='text'>
+						<textarea id='inputtext' placeholder="Input..">:sc:</textarea>
+						symbol 1: <input id='sym1' type='text' value='&lt;&gt;'></input>    symbol 2: <input id='sym2' type='text' value='..'></input>
 					</div>
 					<div id='output'>
 						<textarea id='outputtext' placeholder="Output.."></textarea>
