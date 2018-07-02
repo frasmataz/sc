@@ -96,14 +96,15 @@
 
 		<script type="text/javascript">
 			function go() {
-				var input = document.getElementById('inputtext').value;
-				var sym1 = document.getElementById('sym1').value;
-				var sym2 = document.getElementById('sym2').value;
+				var input = document.getElementById('inputtext').value.replace('+','%2B');
+				var sym1 = document.getElementById('sym1').value.replace('+','%2B');
+				var sym2 = document.getElementById('sym2').value.replace('+','%2B');
 
 				var url = 'http://sc.frasersharp.com/api?';
 				url += 'sym1=' + sym1 + '&';
 				url += 'sym2=' + sym2 + '&';
 				url += 'message=' + input;
+				url = encodeURI(url);
 				var xhr = new XMLHttpRequest();
 				xhr.open('GET', url, true);
 				xhr.send();

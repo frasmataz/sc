@@ -55,17 +55,18 @@ var sanitizeMessage = function(message, dictionary) {
   return output;
 };
 
-exports.get = function get(req, res) {
-  console.log(req.query);
-  var message = req.query.message;
-  var sym1 = req.query.sym1;
-  var sym2 = req.query.sym2;
+exports.get = function(event, context, callback) {
+  console.log(event)
+  var message = event['message'];
+  var sym1 = event['sym1'];
+  var sym2 = event['sym2'];
   var dictionary = JSON.parse(readDictionary());
 
   message = sanitizeMessage(message, dictionary);
 
   var output = formatOutput(message, dictionary, sym1, sym2);
 
-  res.setHeader('content-type', 'text/plain');
-  res.status(200).send(output);
+  // res.setHeader('content-type', 'text/plain');
+  // res.status(200).send(output);
+  callback(null, output)
 };
