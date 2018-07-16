@@ -100,20 +100,24 @@
 				var sym1 = document.getElementById('sym1').value.replace('+','%2B');
 				var sym2 = document.getElementById('sym2').value.replace('+','%2B');
 
-				var url = 'http://sc.frasersharp.com/api?';
-				url += 'sym1=' + sym1 + '&';
-				url += 'sym2=' + sym2 + '&';
-				url += 'message=' + input;
+				var url = 'https://gfxu4na99f.execute-api.eu-west-1.amazonaws.com/0/api';
 				url = encodeURI(url);
+
+				body = {
+					message: input,
+					sym1: sym1,
+					sym2: sym2
+				}
+
 				var xhr = new XMLHttpRequest();
-				xhr.open('GET', url, true);
-				xhr.send();
+				xhr.open('POST', url, true);
+				xhr.send(JSON.stringify(body));
 				xhr.onreadystatechange = processRequest;
 
 				function processRequest(e) {
 					if (xhr.readyState == 4) {
 						console.log(xhr.responseText);
-						document.getElementById('outputtext').innerText = xhr.responseText;
+						document.getElementById('outputtext').value = xhr.responseText;
 					}
 				}
 			}

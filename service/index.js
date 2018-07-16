@@ -57,9 +57,10 @@ var sanitizeMessage = function(message, dictionary) {
 
 exports.get = function(event, context, callback) {
   console.log(event)
-  var message = event['message'];
-  var sym1 = event['sym1'];
-  var sym2 = event['sym2'];
+  body = JSON.parse(event['body'])
+  var message = body['message'];
+  var sym1 = body['sym1'];
+  var sym2 = body['sym2'];
   var dictionary = JSON.parse(readDictionary());
 
   message = sanitizeMessage(message, dictionary);
@@ -68,5 +69,14 @@ exports.get = function(event, context, callback) {
 
   // res.setHeader('content-type', 'text/plain');
   // res.status(200).send(output);
-  callback(null, output)
+  console.log(output)
+  
+  callback(null, {
+    statusCode: 200,
+    body: output,
+    headers: {
+      'Content-Type': 'text/plain',
+      'Access-Control-Allow-Origin': '*'
+    }
+  })
 };
